@@ -20,8 +20,9 @@ Enter the replacement:Dan
 
 """
 people = ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Rick']
-replace1 = input("Enter name you wish to replace: ")
-replace2 = input("Enter replacement: ")
-people.remove(replace1)
-people.append(replace2)
+replace1 = input("Enter name you wish to replace: ").strip()
+replace2 = input("Enter replacement: ").strip()
+x = people.index(replace1)
+people.pop(x)
+people.insert(x, replace2)
 print(people)
