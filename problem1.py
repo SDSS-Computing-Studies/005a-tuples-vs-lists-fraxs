@@ -19,3 +19,9 @@ Enter the replacement:Dan
 ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Dan']
 
 """
+people = ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Rick']
+replace1 = input("Enter name you wish to replace: ")
+replace2 = input("Enter replacement: ")
+people.remove(replace1)
+people.append(replace2)
+print(people)
